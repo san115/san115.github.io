@@ -1,5 +1,5 @@
 
-Here is the updated site. Still work in progress. ![blog index page](blog.template.html)
+Here is the updated site. Still work in progress. ![blog index page](blog/index.html)
 
 **What did you learn about CSS padding, borders, and margin by doing this challenge?**
 I learned the difference between them: padding is the space between the content and the border, for example, the position of the text in a box can be determined by using padding; border shows the boundary of the object that contains content, for example a table has borders, including columns, rows, and cells and blocks of text or images have borders, with size determined by width and height; margin is the space between the elements or borders of the web page, so it can be used to determine position of text boxes, tables, pictures, etc.
