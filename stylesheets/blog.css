@@ -1,0 +1,19 @@
+
+
+p span {
+	font-size: 3em;
+	font-color: red;
+}
+
+a:link {
+	text decoration:none;
+	color: blue;
+}
+
+a:hover {
+	color: yellow;
+}
+
+a:visited {
+	color: green;
+}
