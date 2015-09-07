@@ -1,0 +1,44 @@
+body {
+	background-color: #ebffdb
+	font-fmily: Courier, Times, Sarif;	
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+nav table {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+nav table td {
+	
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 5em;
+	padding-right: 5em;
+}
+
+h1 {
+	font-size: 3em;
+	font-color: #8c1be8;
+}
+
+h2 {
+	font-size: 2.5em;
+	font-color: #1696ff;
+}
+
+h3 {
+	font-size: 2em;
+	font-color: #ffs249;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+footer {
+	font-size: 0.5em;
+}
