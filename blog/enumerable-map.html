@@ -13,7 +13,7 @@
       <tr>
         <td><a href="#home">Home</a></td>
         <td><a href="#projects">Projects</a></td>
-        <td><a href="#aboug">About</a></td>
+        <td><a href="#about">About</a></td>
         <td><a href="other">Other</a></td>
       </tr>
     </table>  
@@ -31,14 +31,14 @@
     </section>
 
     <section>
-      <p><b>The map method</b> Hmethod Applying map method on arrays or any collections allows you to make alterations to the elements in the array without modifying the actual array. It accepts a block of code and modify each element in the group, then it returns the elements in the modified form. For example:</p> 
+      <p><b>The map method</b> The map method works very similar to the each method by setting up iteration. One added advantage to using map is that you have the option of making alterations to the elements in the array with or without modifying the actual array; it can be used as destructive (map!--creates permanent change) or as nondestructive(map--temporary change for instance only) method. It accepts a block of code and modify each element in the group, then it returns the elements in the modified form. For example:</p> 
 
       <table>
             <tr>
               <td>array = [1, 2, 3, 4, 5]</td>
             </tr>
             <tr>
-            <td>array.map { │x│x * 2 } will result in [2, 4, 6, 8, 10]</td>
+            <td>array.map { │x│ x * 2 } will result in [2, 4, 6, 8, 10]</td>
             </tr>
       </table>
      
