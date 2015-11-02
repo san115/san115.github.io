@@ -1,0 +1,43 @@
+body {
+	background-color: #ebffdb
+	font-fmily: Courier, Times, Sarif;	
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+table {
+	display: table-cell;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 0.25em;
+	margin-right: 0.25em;
+}
+
+table td {
+	display: table-cell;
+	width: 40%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.25em;
+	padding-right: 0.75em;
+}
+
+h1 {
+	font-size: 3em;
+	font-color: #8c1be8;
+}
+
+h2 {
+	font-size: 2.5em;
+	font-color: #1696ff;
+}
+
+h3 {
+	font-size: 2em;
+	font-color: #ffs249;
+}
+
+h4 {
+	font-size: 1em;
+}
+
