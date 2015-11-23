@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cheatsheet for SQL</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/cs-default.css">
+ 
+</head>
+
+<body>
+  <header>
+  <h4>Cheatsheet for SQL:</h4>
+  </header>
+
+<section>
+<h4>SQL Queries:</h4>
+
+<table>
+<tr>
+  <td><p><b>Description</b></p></td>
+  <td><p><b>Example</b></p></td>
+</tr>
+
+<tr>
+  <td><p><b>Select all data for table:</b><br />
+<b>select * from</b> [name of table];<br />
+</p></td>
+  <td> name of table: states<br />
+  select * from states;<br /></td>
+</tr>
+
+<tr>
+<td><p><b>Select specific column(s) from a table:</b><br />
+<b>select</b> [name of column], [name of column]<br />
+<b>from</b> [name of table];<br />
+</p></td>
+<td><p>name of columns: state_name, population;<br /> name of table: states:<br />
+select state_name, population<br />
+from states;<br />
+</p>
+</td>
+</tr>
+
+<tr>
+<td><p><b>Select specific columns and ordered by a condition.</b><br /> <b>Order in descending/ascending order</b><br />
+<b>select</b> [name of column], [name of column]<br />
+<b>from</b> [name of table]<br />
+<b>order by</b> [condition] [DESC (for descending order)/ASC (default, for ascending order);<br />
+</p></td>
+<td><p>name of columns: state_name, population;<br /> name of table: states;<br /> condition: ordered by population<br /> from highest to lowest;<br /> 
+select state_name, population<br />
+from states<br />
+order by population DESC;<br />
+</p></td>
+</tr>
+
+<tr>
+<td>
+<p><b>Select a column from a table with specified condition in the column:</b><br />
+<b>select</b> [name of column]<br />
+<b>from</b> [name of table]<br />
+<b>where</b> [specified condition of column];<br />
+</p></td>
+<td>
+<p>name of column: state_name;<br /> name of table: states<br /> specified condition of column: in region 7:<br />
+select state_name<br />
+from states<br />
+where region_id=7;<br />
+</p></td>
+</tr>
+
+<tr>
+<td>
+<p><b>Select specified columns from a table with <br />specific ordered condition for the column</b><br />
+<b>select</b> [name of column]<br />
+<b>from</b> [name of table]<br />
+<b>where</b> [condition for column]<br />
+<b>order by</b> [name of column];<br />
+</p>
+</td>
+<td>
+<p>name of columns: state_name, <br />population_density;<br /> name of table: states<br /> condition of column: with a population<br /> density over 50:<br /> ordered from least to most dense:<br />
+select state_name, population_density<br />
+from states<br />
+where population_density>50<br />
+order by population_density;<br />
+</p>
+</td>
+</tr>
+
+<tr>
+<td>
+<p><b>Select column from a table with range values for a specified condition</b><br />
+<b>select</b> [name of column]<br />
+<b>from</b> [name of table]<br />
+<b>where</b> [specified condition and beginning of range value]<br />
+<b>and</b> [specified condition and end of range value];<br />
+</p></td>
+<td>
+<p>name of column:state_name;<br /> name of table: states;<br /> condition and range values: <br /> population between 1 and 1.5 million people:<br />
+select state_name<br />
+from states<br />
+where population<1000000<br />
+and population>1500000;<br />
+</p></td>
+</tr>
+
+<tr>
+<td><p><b>Select columns from a table and<br /> order by specific condition:</b><br />
+<b>select</b> [name of columns]<br />
+<b>from</b> [name of table]<br />
+<b>order by</b> [specific condition];<br />
+</p></td>
+<td><p>name of columns: state_name,region_id;<br /> name of table: states <br /> condition: region in ascending order:<br />
+select state_name, region_id<br />
+from states<br />
+order by region_id;<br />
+</p></td>
+</tr>
+
+<tr>
+<td><p><b>Select name of column <br /> in name of table with specified<br /> text in the table:</b><br />
+<b>select</b> [name of column]<br />
+<b>from</b> [name of table]<br />
+<b>where</b> [name of column] <b>like</b> [specfied text];<br />
+</p></td>
+<td><p>name of column:region_name<br /> name of table: regions<br /> specified text: "Central" <br />
+select region_name<br />
+from regions<br />
+where region_name like '%Central%';<br />
+</p></td>
+</tr>
+
+<tr>
+<td><p>Select name of columns from<br /> two tables in order by correlating<br /> name of columns:<br />
+<b>select</b> [name of table1].[name of column], [name of table2].[name of column]<br />
+<b>from</b> [name of table 1]<br />
+<b>inner join</b> [name of table 2]<br />
+<b>on</b> [table1].[column name]=[table2][column name];<br />
+</p></td>
+<td><p>name of column/table 1: region_name;<br /> name of column/table2: state_name;<br /> name of table1: regions<br /> name of table2: states<br /> in ascending order by region_id:<br />
+select regions.region_name, states.state_name<br />
+from regions<br />
+inner join states<br />
+on regions.id=states.region_id;<br />
+</p></td>
+</tr>
+</table>
+
+</section>
+
+</body>
+
+</html>
+
+
